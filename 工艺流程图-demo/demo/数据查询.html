@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据查询</title>
+    <style>
+        .container{
+    background:white;
+    flex: 1;
+    flex-direction: column;
+}
+        .container h1{
+    color: #007bff; /* 标题颜色 */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container label {
+    color: #007bff; /* 标签颜色 */
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+.container #result {
+    color: #000000;
+    width: 350px;
+    height: 500px; /* 设置显示区域的高度 */
+    overflow: auto; /* 启用滚动条 */
+    white-space: pre-wrap; /* 保持换行格式 */
+    font-family: monospace; /* 使用等宽字体 */
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+}
+/* 表单元素样式 */
+.container label, input, button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+        <div class="container">
+            <!-- Container content here -->
+            <h1>数据查询</h1>
+            <label for="start_time">开始时间:</label>
+            <input type="datetime-local" id="start_time" name="start_time" value="2024-07-28T15:30:00">
+            <label for="end_time">结束时间:</label>
+            <input type="datetime-local" id="end_time" name="end_time" value="2024-07-29T16:30:00">
+            <button onclick="fetchData()">获取数据</button>
+            <textarea id="result" readonly></textarea>
+        </div>
+</body>
+<script src="home.js"></script>
+</html>
