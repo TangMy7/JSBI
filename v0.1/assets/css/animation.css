@@ -1,0 +1,16 @@
+/* svg */
+.pipeflow {
+    fill: none;
+    stroke-width: 3;
+    stroke-dasharray: 10;
+    animation: flowLine 2s linear infinite;
+ }
+
+ @keyframes flowLine {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -60;
+    }
+}

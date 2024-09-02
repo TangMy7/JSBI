@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工艺流程图</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/animation.css"/>
+</head>
+<body>
+<div class="box">
+    <div class="header">
+        <div class="title"><p>苏盐井神</p></div>
+        <div class="menu">
+            <div class="menu-item">大屏中心</div>
+            <a href="数据查询.html" target="_blank" class="menu-item" style="text-decoration: none">数据查询</a>
+            <div class="menu-item">XXXX</div>
+            <div class="menu-item">XXXX</div>
+            <div class="menu-item">XXXX</div>
+            <div class="system-status" id="system-status">系统运行检测</div>
+            <div id="current-time" class="current-time"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="svg-pad">
+            <!-- 可以在这里定义 SVG 内容，包括图像和路径 -->
+            <svg width="1000px" height="800px">
+                <!-- 重复使用的svg图像 -->
+                <!-- 折线尽头的箭头 -->
+                <symbol id="pl-arrow" class="arrow">
+                    <path d="M0 0 v16 l8-8 z"/>
+                </symbol>
+                <!-- 蒸发罐 -->
+                <symbol id="ev-he" class="ev">
+                    <image href="assets/svg/ev.svg" x="50" y="0" height="220"/>
+                    <image href="assets/svg/he.svg" x="0" y="130" height="120"/>
+                    <image href="assets/svg/he-right.svg" x="200" y="130" height="120"/>
+                    <line class="pipeflow" x1="60" y1="130" x2="122" y2="50" stroke="yellow"/>
+                    <line class="pipeflow" x1="198" y1="50" x2="260" y2="130" stroke="yellow"/>
+                    <polyline class="pipeflow" points="260,250 260,300 60,300 60,250" stroke="yellow"/>
+                    <use href="#pl-arrow" x="110" y="42" fill="yellow" transform="rotate(310 120 45)"></use>
+                    <use href="#pl-arrow" x="260" y="120" fill="yellow" transform="rotate(60 260 125)"></use>
+                    <use href="#pl-arrow" x="60" y="250" fill="yellow" transform="rotate(270 60 257)"></use>
+                </symbol>
+                <!--蒸汽-折线-->
+                <polyline class="pipeflow" points="10,10 10,200 30,200" stroke="red"/>
+                <use href="#pl-arrow" x="30" y="200" fill="red" transform="translate(0,-8)"></use>
+                <!--ev-he-->
+                <use href="#ev-he" x="0" y="10"></use>
+            </svg>
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+</div>
+</body>
+<script src="assets/js/scripts.js"></script>
+</html>
