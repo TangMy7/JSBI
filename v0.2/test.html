@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<style>
+.pipe {
+    fill: none;
+    stroke: black;
+    stroke-width: 10;
+}
+
+.pipeflow {
+    fill: none;
+    stroke-width: 3;
+    stroke-dasharray: 10;
+    animation: flowLine 2s linear infinite;
+}
+
+@keyframes flowLine {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -60;
+    }
+}
+</style>
+
+
+
+</head>
+<body>
+    <svg width="800" height="500">
+        <image href="./assets/svg/new/ev_201.svg" x="120" y="0" height="210"/>
+        <image href="./assets/svg/new/he.svg" x="45" y="100" height="150"/>
+        <image href="./assets/svg/new/he_2.svg" x="245" y="130" height="120"/>
+        <line class="pipe" x1="65" y1="116" x2="122" y2="104"/>
+        <line class="pipeflow" x1="65" y1="116" x2="122" y2="104" stroke="yellow"/>
+        <line class="pipe" x1="198" y1="50" x2="260" y2="130"/>
+        <line class="pipeflow" x1="198" y1="50" x2="260" y2="130" stroke="yellow"/>
+        <polyline class="pipe" points="260,250 260,300 60,300 60,250" />
+        <polyline class="pipeflow" points="260,250 260,300 60,300 60,250" stroke="yellow"/>
+        <!-- <use href="#pl-arrow" x="110" y="42" fill="yellow" transform="rotate(310 120 45)"></use> -->
+        <use href="#pl-arrow" x="260" y="120" fill="yellow" transform="rotate(60 260 125)"></use>
+        <use href="#pl-arrow" x="60" y="250" fill="yellow" transform="rotate(270 60 257)"></use>
+        <image href="./assets/svg/new/p.svg" x="80" y="290" height="20"/>
+
+    </svg>
+    
+</body>
+</html>

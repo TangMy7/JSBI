@@ -7,7 +7,7 @@
  }
 .pipe {
     fill: none;
-    stroke: #424242;
+    stroke: #3f4795;
     stroke-width: 7; /* 外层管道的线宽 */
     /*stroke-opacity: 0.5;*/
 }

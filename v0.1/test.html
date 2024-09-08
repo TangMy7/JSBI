@@ -3,19 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="assets/css/animation.css"/>
+
+<style>
+.pipe {
+    fill: none;
+    stroke: black;
+    stroke-width: 10;
+}
+
+.pipeflow {
+    fill: none;
+    stroke-width: 3;
+    stroke-dasharray: 10;
+    animation: flowLine 2s linear infinite;
+}
+
+@keyframes flowLine {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -60;
+    }
+}
+</style>
+
+
 
 </head>
 <body>
-<svg width="600" height="600" >
-
-    <image href="assets/svg/ev.svg" x="50" y="0"  height="220"/>
-    <image href="assets/svg/he.svg" x="0" y="130"  height="120"/>
-    <image href="assets/svg/he-right.svg" x="200" y="130"  height="120"/>
-    <line class="pipeflow" x1="60" y1="130" x2="122" y2="50" />
-    <line class="pipeflow" x1="198" y1="50" x2="260" y2="130" />
-    <polyline class="pipeflow" points="260,250 260,300 60,300 60,250" />
-</svg>
-
+    <svg width="800" height="500">
+        <defs>
+            <!-- 定义阴影 -->
+            <filter id="pipeShadow" x="-100%" y="-100%" width="300%" height="300%" filterUnits="userSpaceOnUse">
+                <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="black"/>
+            </filter>
+            
+            
+        </defs>
+    
+        <!-- 下面管道 -->
+        <polyline class="pipeflow" points="690,50 690,400" stroke="red" filter="url(#pipeShadow)"/>
+    </svg>
+    
 </body>
 </html>

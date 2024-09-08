@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="52px" viewBox="0 0 60 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>p</title>
+    <defs>
+        <linearGradient x1="45.6176837%" y1="11.2537438%" x2="57.8418236%" y2="21.737945%" id="linearGradient-1">
+            <stop stop-color="#FBFAFF" offset="0%"></stop>
+            <stop stop-color="#FAF9FF" offset="0.653217927%"></stop>
+            <stop stop-color="#D2D6F5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="8.11869564" height="23.6561994"></rect>
+        <filter x="-221.5%" y="-84.2%" width="542.9%" height="268.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-221.5%" y="-84.2%" width="542.9%" height="268.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="2.84217094e-12%" y1="38.2044071%" x2="95.6096961%" y2="38.2044071%" id="linearGradient-6">
+            <stop stop-color="#E9EEF8" offset="0%"></stop>
+            <stop stop-color="#ACBEE4" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="5.0391904" y="-5.0391904" width="8.11869564" height="18.1970764"></rect>
+        <filter x="-64.3%" y="-257.1%" width="228.6%" height="614.3%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-42.9%" y="-336.3%" width="185.7%" height="772.5%" filterUnits="objectBoundingBox" id="filter-10">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-SE" transform="translate(-504.000000, -262.000000)">
+            <g id="编组-11" transform="translate(504.000000, 262.025598)">
+                <g id="编组-32" transform="translate(0.817508, 0.825867)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="矩形" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <rect id="矩形" fill="#7B9CEF" opacity="0.951333909" filter="url(#filter-4)" mask="url(#mask-3)" x="4.74342831" y="0.718247405" width="4.063796" height="10.6841327"></rect>
+                    <rect id="矩形" fill="#FFFFFF" filter="url(#filter-5)" mask="url(#mask-3)" x="7.0908162" y="0.364374124" width="4.063796" height="10.6841327"></rect>
+                </g>
+                <g id="编组-33" transform="translate(40.151189, 28.003861)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <rect stroke="#1B3278" stroke-width="0.5" x="5.2891904" y="-4.7891904" width="7.61869564" height="17.6970764"></rect>
+                    <rect id="矩形" fill="#678DEA" opacity="0.951333909" filter="url(#filter-9)" mask="url(#mask-8)" x="4.84881106" y="5.99613885" width="14" height="3.5"></rect>
+                    <rect id="矩形" fill="#FFFFFF" opacity="0.951333909" filter="url(#filter-10)" mask="url(#mask-8)" x="4.84881106" y="6.95809954" width="14" height="1.78434071"></rect>
+                </g>
+                <rect id="矩形" fill="#515F95" x="58.3482654" y="27.5888765" width="1.65173463" height="8.53368029" rx="0.825867315"></rect>
+                <rect id="矩形备份-5" fill="#515F95" transform="translate(4.942100, 0.825867) rotate(-90.000000) translate(-4.942100, -0.825867) " x="4.11623278" y="-3.58322124" width="1.65173463" height="8.81817711" rx="0.825867315"></rect>
+                <circle id="椭圆形" stroke="#CDDBF6" stroke-width="0.699887555" fill="#0F2D67" cx="23.5162218" cy="28.0038611" r="23.1662781"></circle>
+                <text id="p" font-family="SourceHanSansCN-Regular, Source Han Sans CN" font-size="30" font-weight="normal" fill="#F5F3FD">
+                    <tspan x="14.2162218" y="33.5">p</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
