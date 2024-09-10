@@ -84,8 +84,6 @@ html, body{
     flex: 8;
 }
 .box .main .svg-pad{
-    /*background-color: #083355;*/
-    /*background-image: url('../images/background.png'); !* 替换为你的背景图片路径 *!*/
     background-size: cover; /* 使背景图片覆盖整个容器 */
     background-position: center; /* 使背景图片居中显示 */
     flex: 8;

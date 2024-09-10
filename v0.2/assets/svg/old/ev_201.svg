@@ -57,7 +57,7 @@
                 </g>
                 <rect id="矩形" stroke="#CDDBF6" stroke-width="0.914346065" fill="url(#linearGradient-11)" x="0.457173033" y="25.8468789" width="47.2833435" height="68.5980476"></rect>
                 <text id="EV-201" font-family="SourceHanSansCN-Regular, Source Han Sans CN" font-size="10" font-weight="normal" fill="#F5F3FD">
-                    <!-- <tspan x="7.75598671" y="60.1459027">EV-201</tspan> -->
+                    <tspan x="7.75598671" y="60.1459027">EV-201</tspan>
                 </text>
             </g>
         </g>

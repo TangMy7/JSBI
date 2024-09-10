@@ -20,10 +20,11 @@
             <div id="current-time" class="current-time"></div>
         </div>
     </div>
+
     <div class="main">
         <div class="svg-pad">
             <!-- 可以在这里定义 SVG 内容，包括图像和路径 -->
-            <svg width="100%" height="1000px">
+            <svg width="1900px" height="1000px">
                 <!-- 重复使用的svg图像 -->
                 <!-- 折线尽头的箭头 -->
                 <symbol id="pl-arrow" class="arrow">
@@ -31,291 +32,298 @@
                 </symbol>
                 <!-- 蒸发罐 -->
                 <symbol id="EV-HE">
-                    <!-- <image href="assets/svg/ev.svg" x="50" y="0" height="220"/>
-                    <image href="assets/svg/he.svg" x="0" y="130" height="120"/>
-                    <image href="assets/svg/he-right.svg" x="200" y="130" height="120"/>
-                    <line class="pipeflow" x1="60" y1="130" x2="122" y2="50" stroke="yellow"/>
-                    <line class="pipeflow" x1="198" y1="50" x2="260" y2="130" stroke="yellow"/>
-                    <polyline class="pipeflow" points="260,250 260,300 60,300 60,250" stroke="yellow"/>
-                    <use href="#pl-arrow" x="110" y="42" fill="yellow" transform="rotate(310 120 45)"></use>
-                    <use href="#pl-arrow" x="260" y="120" fill="yellow" transform="rotate(60 260 125)"></use>
-                    <use href="#pl-arrow" x="60" y="250" fill="yellow" transform="rotate(270 60 257)"></use> -->
                     <image href="./assets/svg/new/ev_201.svg" x="120" y="0" height="210"/>
-                    <image href="./assets/svg/new/he.svg" x="45" y="100" height="150"/>
-                    <image href="./assets/svg/new/he_2.svg" x="245" y="130" height="120"/>
-                    <line class="pipe" x1="65" y1="116" x2="122" y2="104"/>
-                    <line class="pipeflow" x1="65" y1="116" x2="122" y2="104" stroke="yellow"/>
-                    <line class="pipe" x1="198" y1="50" x2="260" y2="130"/>
-                    <line class="pipeflow" x1="198" y1="50" x2="260" y2="130" stroke="yellow"/>
-                    <polyline class="pipe" points="260,250 260,300 60,300 60,250" />
-                    <polyline class="pipeflow" points="260,250 260,300 60,300 60,250" stroke="yellow"/>
-                    <!-- <use href="#pl-arrow" x="110" y="42" fill="yellow" transform="rotate(310 120 45)"></use> -->
-                    <use href="#pl-arrow" x="260" y="120" fill="yellow" transform="rotate(60 260 125)"></use>
-                    <use href="#pl-arrow" x="60" y="250" fill="yellow" transform="rotate(270 60 257)"></use>
-                    <image href="./assets/svg/new/p.svg" x="80" y="290" height="20"/>
+                    <image href="./assets/svg/new/he.svg" x="35" y="120" height="150"/>
+                    <image href="./assets/svg/new/he_2.svg" x="245" y="150" height="120"/>
+                    <image href="./assets/svg/new/sl.svg" x="144" y="175" height="90"/>
+                    <line class="pipeflow" x1="65" y1="136" x2="121" y2="125" stroke="yellow"/>
+                    <polyline class="pipe" points="198,120 260,120 260,151"/>
+                    <polyline class="pipeflow" points="198,120 260,120 260,165" stroke="yellow"/>
+                    <polyline class="pipe" points="259,254 260,320 60,320 60,268" />
+                    <polyline class="pipeflow" points="259,254 260,320 60,320 60,268" stroke="yellow"/>
+                    <image href="./assets/svg/new/p.svg" x="57" y="302" height="30"/>
                 </symbol>
                 <!-- HE -->
                 <symbol id="HE">
-                    <!-- <image href="assets/svg/he.svg" x="50" y="0" height="100"/> -->
-                    <image href="./assets/svg/new/he_2.svg" x="90" y="0" height="100"/>
+                     <image href="./assets/svg/new/he_2.svg" x="90" y="0" height="100"/>
                 </symbol>
                 <!-- vp -->
                 <symbol id="VP">
-                    <!-- <image href="assets/svg/vp.svg" x="50" y="0" height="100"/> -->
                     <image href="./assets/svg/new/vp_201.svg" x="35" y="13" height="80"/>
                 </symbol>
-                <!-- yanjiang -->
+                <!-- 盐浆桶 -->
                 <symbol id="YJ">
-                    <!-- <image href="assets/svg/yanjiang.svg" x="50" y="0" height="220"/> -->
                     <image href="./assets/svg/new/yjt.svg" x="50" y="0" height="210"/>
                 </symbol>
-                <!-- lixing -->
+                <!-- 离心机 -->
                 <symbol id="LX">
-                    <!-- <image href="assets/svg/lixin.svg" x="50" y="0" height="200"/> -->
                     <image href="./assets/svg/new/lxj.svg" x="50" y="0" height="160"/>
-
                 </symbol>
-                <!-- ganzao -->
+                <!-- 干燥床 -->
                 <symbol id="GZ">
-                    <!-- <image href="assets/svg/ganzao.svg" x="50" y="0" height="200"/> -->
                     <image href="./assets/svg/new/gzj.svg" x="50" y="80" height="150"/>
-
                 </symbol>
-                    <defs>
-        <!-- 定义阴影 -->
-        <filter id="pipeShadow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="userSpaceOnUse">
-            <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="black"/>
-        </filter>
-    </defs>
+                <!-- 冷凝器 -->
+                <symbol id="LN">
+                    <image href="./assets/svg/new/lnq.svg" x="50" y="50" height="60"/>
+                </symbol>
+                <!-- T200 -->
+                <symbol id="T200">
+                    <image href="./assets/svg/new/T200.svg" x="50" y="50" height="80"/>
+                </symbol>
+                <!-- p200 -->
+                <symbol id="P200">
+                    <image href="./assets/svg/new/p200.svg" x="50" y="50" height="40"/>
+                </symbol>
+                <defs>
+                <!-- 定义阴影 -->
+                    <filter id="pipeShadow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="userSpaceOnUse">
+                        <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="black"/>
+                    </filter>
+                </defs>
                 <!--左下角说明-->
-                <text x="120" y="810" font-size="18" fill="red">蒸汽</text>
-                <polyline points="80,820 180,820" stroke="red"></polyline>
+                <text x="120" y="810" font-size="18" fill="red" font-weight="700">蒸汽</text>
+                <polyline points="80,820 180,820" stroke="red" stroke-width="5px"></polyline>
                 <use href="#pl-arrow" x="180" y="820" fill="red" transform="translate(0,-8)"></use>
-                <text x="120" y="860" font-size="18" fill="yellow">卤水</text>
+                <text x="120" y="860" font-size="18" fill="yellow" font-weight="700">卤水</text>
 
-                <polyline points="80,870 180,870" stroke="yellow"></polyline>
+                <polyline points="80,870 180,870" stroke="yellow" stroke-width="5px"></polyline>
                 <use href="#pl-arrow" x="180" y="870" fill="yellow" transform="translate(0,-8)"></use>
-                <text x="120" y="910" font-size="18" fill="purple">母液</text>
+                <text x="120" y="910" font-size="18" fill="purple" font-weight="700">母液</text>
 
-                <polyline points="80,920 180,920" stroke="purple"></polyline>
+                <polyline points="80,920 180,920" stroke="purple" stroke-width="5px"></polyline>
                 <use href="#pl-arrow" x="180" y="920" fill="purple" transform="translate(0,-8)"></use>
-                <text x="290" y="830" font-size="18" fill="blue">冷凝水</text>
+                <text x="290" y="830" font-size="18" fill="blue" font-weight="700">冷凝水</text>
 
-                <polyline points="260,840 360,840" stroke="blue"></polyline>
+                <polyline points="260,840 360,840" stroke="blue" stroke-width="5px"></polyline>
                 <use href="#pl-arrow" x="360" y="840" fill="blue" transform="translate(0,-8)"></use>
-                <text x="290" y="880" font-size="18" fill="green">盐浆</text>
+                <text x="290" y="880" font-size="18" fill="green" font-weight="700">盐浆</text>
 
-                <polyline points="260,890 360,890" stroke="green"></polyline>
+                <polyline points="260,890 360,890" stroke="green" stroke-width="5px"></polyline>
                 <use href="#pl-arrow" x="360" y="890" fill="green" transform="translate(0,-8)"></use>
 
 
                 <!--蒸汽-折线-->
                 <g>
-                <!--                1-->
-                <polyline class="pipe" points="10,10 10,200 30,200" />
-                <polyline class="pipeflow" points="10,10 10,200 30,200" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="30" y="200" fill="red" transform="translate(0,-8)"></use>
+                <!--1-->
+                <polyline class="pipe" points="10,10 10,200 37,200" />
+                <polyline class="pipeflow" points="10,10 10,200 37,200" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="30" y="200" fill="red" transform="translate(0,-8)"></use> -->
                 <!--2-->
-                <polyline class="pipe" points="100,520 100,500 10,500 10,210" />
-                <polyline class="pipeflow" points="100,520 100,500 10,500 10,210" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="10" y="200" fill="red" transform="rotate(270 10 208)"></use>
-                <!--                3-->
-                <polyline class="pipe" points="198,50 410,50 410,150" />
-                <polyline class="pipeflow" points="198,50 410,50 410,150" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="405" y="120" fill="red" transform="rotate(90 405 132)"></use>
-                <polyline class="pipe" points="198,50 330,50 330,450 388,450" />
-                <polyline class="pipeflow" points="198,50 330,50 330,450 388,450" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="390" y="450" fill="red" transform="translate(-8,-8)"></use>
-                <!--                4-->
+                <polyline class="pipe" points="53,520 53,500 10,500 10,202" />
+                <polyline class="pipeflow" points="53,520 53,500 10,500 10,210" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="10" y="200" fill="red" transform="rotate(270 10 208)"></use> -->
+                <!--3-->
+                <polyline class="pipe" points="197,50 410,50 410,150" />
+                <polyline class="pipeflow" points="197,50 410,50 410,150" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="409" y="119" fill="red" transform="rotate(90 405 132)"></use> -->
+                <polyline class="pipe" points="198,50 330,50 330,450 400,450" />
+                <polyline class="pipeflow" points="198,50 330,50 330,450 400,450" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="400" y="450" fill="red" transform="translate(-8,-8)"></use> -->
+                <!--4-->
                 <polyline class="pipe" points="550,50 760,50 760,150" />
                 <polyline class="pipeflow" points="550,50 760,50 760,150" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="755" y="130" fill="red" transform="rotate(90 760 137)"></use>
-                <polyline class="pipe" points="690,50 690,400" />
-                <polyline class="pipeflow" points="690,50 690,400" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="687" y="367" fill="red" transform="rotate(90 680 385)" ></use>
-                <!--                5-->
-                <polyline class="pipe" points="900,50 1105,50 1105,150" />
-                <polyline class="pipeflow" points="900,50 1105,50 1105,150" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1095" y="127" fill="red" transform="rotate(90 1100 140)"></use>
-                <polyline class="pipe" points="1030,50 1030,400" />
-                <polyline class="pipeflow" points="1030,50 1030,400" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1021" y="393" fill="red" transform="rotate(90 1030 400)"></use>
-                <!--                6-->
+                <!-- <use href="#pl-arrow" x="760" y="129" fill="red" transform="rotate(90 760 137)"></use> -->
+                <polyline class="pipe" points="693,53 693,400" />
+                <polyline class="pipeflow" points="693,54 693,400" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="687" y="365" fill="red" transform="rotate(90 680 385)" ></use> -->
+                <!--5-->
+                <polyline class="pipe" points="900,50 1110,50 1110,150" />
+                <polyline class="pipeflow" points="900,50 1110,50 1110,150" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1097" y="123" fill="red" transform="rotate(90 1100 140)"></use> -->
+                <polyline class="pipe" points="1032,53 1032,400" />
+                <polyline class="pipeflow" points="1032,54 1032,400" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1022" y="390" fill="red" transform="rotate(90 1030 400)"></use> -->
+                <!--6-->
                 <polyline class="pipe" points="1250,50 1460,50 1460,150" />
                 <polyline class="pipeflow" points="1250,50 1460,50 1460,150" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1440" y="143" fill="red" transform="rotate(90 1460 150)"></use>
-                <polyline class="pipe" points="1390,50 1390,400" />
-                <polyline class="pipeflow" points="1390,50 1390,400" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1382" y="392" fill="red" transform="rotate(90 1390 400)"></use>
+                <!-- <use href="#pl-arrow" x="1445" y="143" fill="red" transform="rotate(90 1460 150)"></use> -->
+                <polyline class="pipe" points="1392,53 1392,400" />
+                <polyline class="pipeflow" points="1392,54 1392,400" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1382" y="390" fill="red" transform="rotate(90 1390 400)"></use> -->
                 <!--7-->
-                <polyline class="pipe" points="350,600 300,600 300,200 380,200" />
-                <polyline class="pipeflow" points="350,600 300,600 300,200 380,200" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="385" y="200" fill="red" transform="translate(-8,-8)"></use>
-                <!--                8-->
-                <polyline class="pipe" points="660,580 660,200 730,200" />
-                <polyline class="pipeflow" points="660,580 660,200 730,200" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="735" y="200" fill="red" transform="translate(-8,-8)"></use>
-                <!--                9-->
-                <polyline class="pipe" points="1000,580 1000,200 1080,200" />
-                <polyline class="pipeflow" points="1000,580 1000,200 1080,200" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1085" y="200" fill="red" transform="translate(-8,-8)"></use>
-                <!--                10-->
-                <polyline class="pipe" points="1360,580 1360,200 1430,200" />
-                <polyline class="pipeflow" points="1360,580 1360,200 1430,200" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1435" y="200" fill="red" transform="translate(-8,-8)"></use>
-                <!--                11-->
-                <polyline class="pipe" points="230,700 230,550 740,550 740,270" />
-                <polyline class="pipeflow" points="230,700 230,550 740,550 740,270" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="745" y="270" fill="red" transform="rotate(270 740,278)"></use>
+                <polyline class="pipe" points="350,598 300,598 300,200 387,200" />
+                <polyline class="pipeflow" points="350,598 300,598 300,200 387,200" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="385" y="200" fill="red" transform="translate(-8,-8)"></use> -->
+                <!--8-->
+                <polyline class="pipe" points="663,580 663,200 737,200" />
+                <polyline class="pipeflow" points="663,580 663,200 737,200" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="735" y="200" fill="red" transform="translate(-8,-8)"></use> -->
+                <!--9-->
+                <polyline class="pipe" points="1003,580 1003,200 1087,200" />
+                <polyline class="pipeflow" points="1003,580 1003,200 1087,200" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1085" y="200" fill="red" transform="translate(-8,-8)"></use> -->
+                <!--10-->
+                <polyline class="pipe" points="1363,580 1363,200 1437,200" />
+                <polyline class="pipeflow" points="1363,580 1363,200 1437,200" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1435" y="200" fill="red" transform="translate(-8,-8)"></use> -->
+                <!--11-->
+                <polyline class="pipe" points="217,700 217,550 745,550 745,270" />
+                <polyline class="pipeflow" points="217,700 217,550 745,550 745,270" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="730" y="275" fill="red" transform="rotate(270 740,278)"></use> -->
                 <!--12-->
-                <polyline class="pipe" points="530,700 530,650 1090,650 1090,270" />
-                <polyline class="pipeflow" points="530,700 530,650 1090,650 1090,270" stroke="red" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1095" y="270" fill="red" transform="rotate(270 1090,278)"></use>
+                <polyline class="pipe" points="517,700 517,650 1095,650 1095,270" />
+                <polyline class="pipeflow" points="517,700 517,650 1095,650 1095,270" stroke="red" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1080" y="275" fill="red" transform="rotate(270 1090,278)"></use> -->
+                <!-- 13 -->
+                <polyline class="pipe" points="1570,90 1680,90" />
+                <polyline class="pipeflow" points="1570,90 1680,90" stroke="red" filter="url(#pipeShadow)"/>
+                <use href="#pl-arrow" x="1685" y="90" fill="red" transform="translate(-8,-8)"></use>
                 </g>
-                <!-- 冷凝水-折线-->
+                <!-- 冷凝水-折线--> 
                 <g>
-                <!--                1-->
-                <polyline class="pipe" points="100,580 100,700 135,700" />
-                <polyline class="pipeflow" points="100,580 100,700 135,700" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="135" y="700" fill="blue" transform="translate(5, -8)"></use>
+                <!--1-->
+                <polyline class="pipe" points="56,580 56,697 135,697" />
+                <polyline class="pipeflow" points="56,580 56,697 135,697" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="135" y="700" fill="blue" transform="translate(5, -8)"></use> -->
                 <!--2-->
-                <polyline class="pipe" points="250,500 250,520 200,520 200,670" />
-                <polyline class="pipeflow" points="250,500 250,520 200,520 200,670" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="198" y="662" fill="blue" transform="rotate(90 200,670)"></use>
+                <polyline class="pipe" points="252,500 252,520 173,520 173,670" />
+                <polyline class="pipeflow" points="252,500 252,520 173,520 173,670" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="198" y="662" fill="blue" transform="rotate(90 200,670)"></use> -->
                 <!--3-->
-                <polyline class="pipe" points="250,700 440,700" />
-                <polyline class="pipeflow" points="250,700 440,700" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="440" y="700" fill="blue" transform="translate(2, -8)"></use>
+                <polyline class="pipe" points="250,697 440,697" />
+                <polyline class="pipeflow" points="250,697 440,697" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="440" y="700" fill="blue" transform="translate(2, -8)"></use> -->
                 <!--4-->
-                <polyline class="pipe" points="410,500 410,570" />
-                <polyline class="pipeflow" points="410,500 410,570" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="408" y="562" fill="blue" transform="rotate(90 410,570)"></use>
+                <polyline class="pipe" points="412,500 412,525 383,525 383,570" />
+                <polyline class="pipeflow" points="412,500 412,525 383,525 383,570" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="408" y="562" fill="blue" transform="rotate(90 410,570)"></use> -->
                 <!--5-->
-                <polyline class="pipe" points="435,200 440,200 440,570" />
-                <polyline class="pipeflow" points="435,200 440,200 440,570" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="438" y="562" fill="blue" transform="rotate(90 440,570)"></use>
+                <polyline class="pipe" points="428,200 450,200 450,525 427,525 427,570" />
+                <polyline class="pipeflow" points="428,200 450,200 450,525 427,525 427,570" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="438" y="562" fill="blue" transform="rotate(90 440,570)"></use> -->
                 <!--6-->
-                <polyline class="pipe" points="460,600 630,600" />
-                <polyline class="pipeflow" points="460,600 630,600" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="630" y="600" fill="blue" transform="translate(2, -8)"></use>
+                <polyline class="pipe" points="460,598 630,598" />
+                <polyline class="pipeflow" points="460,598 630,598" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="630" y="600" fill="blue" transform="translate(2, -8)"></use> -->
                 <!--7-->
                 <polyline class="pipe" points="700,450 720,450" />
                 <polyline class="pipeflow" points="700,450 720,450" stroke="blue" filter="url(#pipeShadow)"/>
                 <!--8-->
-                <polyline class="pipe" points="730,230 720,230 720,570" />
-                <polyline class="pipeflow" points="730,230 720,230 720,570" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="718" y="562" fill="blue" transform="rotate(90 720,570)"></use>
+                <polyline class="pipe" points="738,230 720,230 720,525 707,525 707,570" />
+                <polyline class="pipeflow" points="738,230 720,230 720,525 707,525 707,570" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="718" y="562" fill="blue" transform="rotate(90 720,570)"></use> -->
                 <!--9-->
-                <polyline class="pipe" points="730,600 970,600" />
-                <polyline class="pipeflow" points="730,600 970,600" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="970" y="600" fill="blue" transform="translate(2, -8)"></use>
+                <polyline class="pipe" points="730,598 970,598" />
+                <polyline class="pipeflow" points="730,598 970,598" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="970" y="600" fill="blue" transform="translate(2, -8)"></use> -->
                 <!--10-->
                 <polyline class="pipe" points="1050,450 1070,450" />
                 <polyline class="pipeflow" points="1050,450 1070,450" stroke="blue" filter="url(#pipeShadow)"/>
                 <!--11-->
-                <polyline class="pipe" points="1080,230 1070,230 1070,570" />
-                <polyline class="pipeflow" points="1080,230 1070,230 1070,570" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1068" y="562" fill="blue" transform="rotate(90 1070,570)"></use>
+                <polyline class="pipe" points="1088,230 1070,230 1070,525 1047,525 1047,570" />
+                <polyline class="pipeflow" points="1088,230 1070,230 1070,525 1047,525 1047,570" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1068" y="562" fill="blue" transform="rotate(90 1070,570)"></use> -->
                 <!--12-->
-                <polyline class="pipe" points="1080,600 1330,600" />
-                <polyline class="pipeflow" points="1080,600 1330,600" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1330" y="600" fill="blue" transform="translate(2, -8)"></use>
+                <polyline class="pipe" points="1080,598 1330,598" />
+                <polyline class="pipeflow" points="1080,598 1330,598" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1330" y="600" fill="blue" transform="translate(2, -8)"></use> -->
                 <!--13-->
                 <polyline class="pipe" points="1400,450 1420,450" />
-                <polyline class="pipeflow" points="1400,450 1420,450" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <polyline class="pipeflow" points="1400,450 1420,450" stroke="blue" filter="url(#pipeShadow)"/> -->
                 <!--14-->
-                <polyline class="pipe" points="1430,230 1420,230 1420,570" />
-                <polyline class="pipeflow" points="1430,230 1420,230 1420,570" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1418" y="562" fill="blue" transform="rotate(90 1420,570)"></use>
+                <polyline class="pipe" points="1438,230 1420,230 1420,525 1407,525 1407,570" />
+                <polyline class="pipeflow" points="1438,230 1420,230 1420,525 1407,525 1407,570" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1418" y="562" fill="blue" transform="rotate(90 1420,570)"></use> -->
                 <!--15-->
-                <polyline class="pipe" points="1550,600 1550,450 1680,450" />
-                <polyline class="pipeflow" points="1550,600 1550,450 1680,450" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1680" y="450" fill="blue" transform="translate(2, -8)"></use>
+                <polyline class="pipe" points="1510,600 1510,450 1700,450" />
+                <polyline class="pipeflow" points="1510,600 1510,450 1700,450" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1680" y="450" fill="blue" transform="translate(2, -8)"></use> -->
                 <!--16-->
-                <polyline class="pipe" points="1450,600 1680,600" />
-                <polyline class="pipeflow" points="1450,600 1680,600" stroke="blue" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1680" y="600" fill="blue" transform="translate(2, -8)"></use>
+                <polyline class="pipe" points="1450,600 1700,600" />
+                <polyline class="pipeflow" points="1450,600 1700,600" stroke="blue" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1680" y="600" fill="blue" transform="translate(2, -8)"></use> -->
+                <!-- 17 -->
+                <polyline class="pipeflow" points="550,697 650,697" stroke="#3f4795"/>
+                <text x="660" y="707" font-size="28" fill="#3f4795">外排</text>
+                <use href="#pl-arrow" x="650" y="697" fill="#3f4795" transform="translate(2, -8)"></use>
                 </g>
                 <!--盐浆-折线-->
                 <g>
-                <!--                1-->
-                <polyline class="pipe" points="165,230 165,340 865,340" />
-                <polyline class="pipeflow" points="165,230 165,340 865,340" stroke="green" filter="url(#pipeShadow)"/>
-                <!--                2-->
-                <polyline class="pipe" points="515,230 515,340" />
-                <polyline class="pipeflow" points="515,230 515,340" stroke="green" filter="url(#pipeShadow)"/>
-                <!--                3-->
-                <polyline class="pipe" points="865,230 865,760" />
-                <polyline class="pipeflow" points="865,230 865,760" stroke="green" filter="url(#pipeShadow)"/>
+                <!--1-->
+                <polyline class="pipe" points="168,250 168,380 865,380" />
+                <polyline class="pipeflow" points="168,250 168,380 865,380" stroke="green" filter="url(#pipeShadow)"/>
+                <!--2-->
+                <polyline class="pipe" points="518,250 518,377" />
+                <polyline class="pipeflow" points="518,250 518,377" stroke="green" filter="url(#pipeShadow)"/>
+                <!--3-->
+                <polyline class="pipe" points="868,250 865,760" />
+                <polyline class="pipeflow" points="868,250 865,760" stroke="green" filter="url(#pipeShadow)"/>
                 <!--4-->
-                <polyline class="pipe" points="1215,230 1215,340" />
-                <polyline class="pipeflow" points="1215,230 1215,340" stroke="green" filter="url(#pipeShadow)"/>
+                <polyline class="pipe" points="1218,250 1218,377" />
+                <polyline class="pipeflow" points="1218,250 1218,377" stroke="green" filter="url(#pipeShadow)"/>
                 <!--5-->
-                <polyline class="pipe" points="1565,230 1565,340 865,340" />
-                <polyline class="pipeflow" points="1565,230 1565,340 865,340" stroke="green" filter="url(#pipeShadow)"/>
+                <polyline class="pipe" points="1568,250 1568,380 865,380" />
+                <polyline class="pipeflow" points="1568,250 1568,380 865,380" stroke="green" filter="url(#pipeShadow)"/>
                 </g>
                 <!--卤水-折线-->
-                <g>
-                <!--                1-->
-                <polyline class="pipe" points="230,470 200,470 200,310" />
-                <polyline class="pipeflow" points="230,470 200,470 200,310" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="192" y="302" fill="yellow" transform="rotate(270 200,310)"></use>
+                <g> 
+                <!--1-->
+                <polyline class="pipe" points="240,470 200,470 200,333" />
+                <polyline class="pipeflow" points="240,470 200,470 200,333" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="192" y="302" fill="yellow" transform="rotate(270 200,310)"></use> -->
                 <!--2-->
-                <polyline class="pipe" points="400,470 270,470" />
-                <polyline class="pipeflow" points="400,470 270,470" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="262" y="462" fill="yellow" transform="rotate(180 270,470)"></use>
+                <polyline class="pipe" points="402,470 260,470" />
+                <polyline class="pipeflow" points="402,470 260,470" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="262" y="462" fill="yellow" transform="rotate(180 270,470)"></use> -->
                 <!--3-->
-                <polyline class="pipe" points="700,470 430,470" />
-                <polyline class="pipeflow" points="700,470 430,470" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="422" y="462" fill="yellow" transform="rotate(180 430,470)"></use>
+                <polyline class="pipe" points="702,470 420,470" />
+                <polyline class="pipeflow" points="702,470 420,470" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="422" y="462" fill="yellow" transform="rotate(180 430,470)"></use> -->
                 <!--4-->
-                <polyline class="pipe" points="1020,470 710,470" />
-                <polyline class="pipeflow" points="1020,470 710,470" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="702" y="462" fill="yellow" transform="rotate(180 710,470)"></use>
-                <!--                5-->
-                <polyline class="pipe" points="1370,470 1050,470" />
-                <polyline class="pipeflow" points="1370,470 1050,470" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1042" y="462" fill="yellow" transform="rotate(180 1050,470)"></use>
+                <polyline class="pipe" points="1022,470 700,470" />
+                <polyline class="pipeflow" points="1022,470 700,470" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="702" y="462" fill="yellow" transform="rotate(180 710,470)"></use> -->
+                <!--5-->
+                <polyline class="pipe" points="1382,470 1040,470" />
+                <polyline class="pipeflow" points="1382,470 1040,470" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1042" y="462" fill="yellow" transform="rotate(180 1050,470)"></use> -->
                 <!--6-->
-                <polyline class="pipe" points="1690,470 1410,470" />
-                <polyline class="pipeflow" points="1690,470 1410,470" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1402" y="462" fill="yellow" transform="rotate(180 1410,470)"></use>
+                <polyline class="pipe" points="1702,470 1400,470" />
+                <polyline class="pipeflow" points="1702,470 1400,470" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1402" y="462" fill="yellow" transform="rotate(180 1410,470)"></use> -->
                 <!--7-->
-                <polyline class="pipe" points="560,470 560,310" />
-                <polyline class="pipeflow" points="560,470 560,310" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="552" y="302" fill="yellow" transform="rotate(270 560,310)"></use>
+                <polyline class="pipe" points="560,467 560,333" />
+                <polyline class="pipeflow" points="560,467 560,333" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="552" y="302" fill="yellow" transform="rotate(270 560,310)"></use> -->
                 <!--8-->
-                <polyline class="pipe" points="920,470 920,310" />
-                <polyline class="pipeflow" points="920,470 920,310" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="912" y="302" fill="yellow" transform="rotate(270 920,310)"></use>
+                <polyline class="pipe" points="920,467 920,333" />
+                <polyline class="pipeflow" points="920,467 920,333" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="912" y="302" fill="yellow" transform="rotate(270 920,310)"></use> -->
                 <!--9-->
-                <polyline class="pipe" points="1260,470 1260,310" />
-                <polyline class="pipeflow" points="1260,470 1260,310" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1252" y="302" fill="yellow" transform="rotate(270 1260,310)"></use>
+                <polyline class="pipe" points="1260,467 1260,333" />
+                <polyline class="pipeflow" points="1260,467 1260,333" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1252" y="302" fill="yellow" transform="rotate(270 1260,310)"></use> -->
                 <!--10-->
-                <polyline class="pipe" points="1610,470 1610,310" />
-                <polyline class="pipeflow" points="1610,470 1610,310" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1602" y="302" fill="yellow" transform="rotate(270 1610,310)"></use>
+                <polyline class="pipe" points="1610,467 1610,333" />
+                <polyline class="pipeflow" points="1610,467 1610,333" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1602" y="302" fill="yellow" transform="rotate(270 1610,310)"></use> -->
                 <!--11-->
-                <polyline class="pipe" points="1690,630 155,630 155,230" />
-                <polyline class="pipeflow" points="1690,630 155,630 155,230" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="147" y="222" fill="yellow" transform="rotate(270 155,230)"></use>
+                <polyline class="pipe" points="1702,635 155,635 151,250" />
+                <polyline class="pipeflow" points="1702,635 155,635 151,250" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="147" y="222" fill="yellow" transform="rotate(270 155,230)"></use> -->
                 <!--12--> 
-                <polyline class="pipe" points="505,630 505,230" />
-                <polyline class="pipeflow" points="505,630 505,230" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="497" y="222" fill="yellow" transform="rotate(270 505,230)"></use>
+                <polyline class="pipe" points="500,632 500,250" />
+                <polyline class="pipeflow" points="500,632 500,250" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="497" y="222" fill="yellow" transform="rotate(270 505,230)"></use> -->
                 <!--13-->
-                <polyline class="pipe" points="855,630 855,230" />
-                <polyline class="pipeflow" points="855,630 855,230" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="847" y="222" fill="yellow" transform="rotate(270 855,230)"></use>
+                <polyline class="pipe" points="850,632 850,250" />
+                <polyline class="pipeflow" points="850,632 850,250" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="847" y="222" fill="yellow" transform="rotate(270 855,230)"></use> -->
                 <!--14-->
-                <polyline class="pipe" points="1205,630 1205,230" />
-                <polyline class="pipeflow" points="1205,630 1205,230" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1197" y="222" fill="yellow" transform="rotate(270 1205,230)"></use>
+                <polyline class="pipe" points="1200,632 1200,250" />
+                <polyline class="pipeflow" points="1200,632 1200,250" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1197" y="222" fill="yellow" transform="rotate(270 1205,230)"></use> -->
                 <!--15-->
-                <polyline class="pipe" points="1555,630 1555,230" />
-                <polyline class="pipeflow" points="1555,630 1555,230" stroke="yellow" filter="url(#pipeShadow)"/>
-                <use href="#pl-arrow" x="1547" y="222" fill="yellow" transform="rotate(270 1555,230)"></use>
+                <polyline class="pipe" points="1550,632 1550,250" />
+                <polyline class="pipeflow" points="1550,632 1550,250" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- <use href="#pl-arrow" x="1547" y="222" fill="yellow" transform="rotate(270 1555,230)"></use> -->
+                <!-- 16 -->
+                <polyline class="pipe" points="1700,635 1780,635" />
+                <polyline class="pipeflow" points="1700,635 1780,635" stroke="yellow" filter="url(#pipeShadow)"/>
+                <!-- 17 -->
+                <polyline class="pipe" points="1700,470 1780,470 1780,720 1600,720" />
+                <polyline class="pipeflow" points="1700,470 1780,470 1780,720 1600,720" stroke="yellow" filter="url(#pipeShadow)"/>
                 </g>
                 <!--EV-HE-->
                 <use href="#EV-HE" x="0" y="10"></use>
@@ -330,9 +338,9 @@
                 <use href="#HE" x="930" y="400"></use>
                 <use href="#HE" x="1290" y="400"></use>
                 <use href="#HE" x="1610" y="400"></use>
-                <use href="#HE" x="1610" y="550"></use>
+                <use href="#HE" x="1610" y="560"></use>
                 <!--VP-->
-                <use href="#VP" x="0" y="500"></use>
+                <use href="#VP" x="-20" y="500"></use>
                 <use href="#VP" x="310" y="550"></use>
                 <use href="#VP" x="590" y="550"></use>
                 <use href="#VP" x="930" y="550"></use>
@@ -340,15 +348,14 @@
                 <use href="#VP" x="100" y="650"></use>
                 <use href="#VP" x="400" y="650"></use>
                 <!--外排-->
-                <polyline class="pipeflow" points="1682,200 1790,200" stroke="#3f4795"/>
-                <text x="1800" y="210" font-size="28" fill="#3f4795">外排</text>
-                <use href="#pl-arrow" x="1790" y="200" fill="#3f4795" transform="translate(2, -8)"></use>
+                <polyline class="pipeflow" points="1682,220 1790,220" stroke="#3f4795"/>
+                <text x="1800" y="230" font-size="28" fill="#3f4795">外排</text>
+                <use href="#pl-arrow" x="1790" y="220" fill="#3f4795" transform="translate(2, -8)"></use>
 
                 <!--盐浆桶折线-->
-                <use href="#YJ" x="700" y="750"></use>
-                <polyline class="pipeflow" points="970,835 1040,835" stroke="#3f4795"/>
+                <polyline class="pipeflow" points="950,835 1040,835" stroke="#3f4795"/>
                 <use href="#pl-arrow" x="1040" y="835" fill="#3f4795" transform="translate(-3, -8)"></use>
-                <polyline class="pipeflow" points="970,900 1040,900" stroke="#3f4795"/>
+                <polyline class="pipeflow" points="950,900 1040,900" stroke="#3f4795"/>
                 <use href="#pl-arrow" x="1040" y="900" fill="#3f4795" transform="translate(-3, -8)"></use>
                 <!-- 离心机折线 -->
                 <polyline class="pipeflow" points="1310,835 1350,835" stroke="#3f4795"/>
@@ -358,14 +365,26 @@
                 <!-- 包装折线 -->
                 <polyline class="pipeflow" points="1710,880 1750,880" stroke="#3f4795"/>
                 <use href="#pl-arrow" x="1750" y="880" fill="#3f4795" transform="translate(-5, -8)"></use>
+                <!-- 盐浆桶 -->
+                <use href="#YJ" x="730" y="750"></use>
                 <!--离心机-->
                 <use href="#LX" x="990" y="790"></use>
                 <!--干燥-->
                 <use href="#GZ" x="1300" y="720"></use>
+                <!-- 冷凝器 -->
+                <use href="#LN" x="1635" y="15"></use>
                 <!--包装-->
                 <text x="1760" y="890" font-size="28" fill="#3f4795">包装</text>
+                <!-- T200 -->
+                <use href="#T200" x="1460" y="625"></use>
+                <!-- P200 -->
+                <use href="#P200" x="1620" y="648"></use>
 
 
+                <!-- test -->
+                    <rect id="water" x="123" y="60" width="72"  fill="blue"/>
+                    <text id="dynamic-text" x="155" y="79" style="fill: white;font-size: 10px">数据库</text>
+                    <rect id="dynamic-text-Rect" x="137" y="68" width="45" height="15" stroke="green" fill="none"/>
             </svg>
         </div>
     </div>
