@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="51px" viewBox="0 0 17 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>sl</title>
+    <defs>
+        <polygon id="path-1" points="0 0 16 0 9.65446569 8.87828199 6.91748472 8.86405234"></polygon>
+        <filter x="-86.3%" y="-69.2%" width="272.6%" height="238.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-63.2%" y="-46.1%" width="226.3%" height="192.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E6ECF9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#CDDBF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6BCE4;stop-opacity:1" />
+    </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-SE" transform="translate(-329.000000, -269.000000)">
+            <g id="sl" transform="translate(329.366242, 269.556789)">
+                <g id="编组-4">
+                    <!-- <rect id="矩形" stroke="#CDDBF6" stroke-width="0.5" fill="#0F2D67" x="0.25" y="0.25" width="15.5" height="34.759319"></rect> -->
+                    <rect id="矩形" stroke="#CDDBF6" stroke-width="0.5" fill="url(#grad1)" x="0.25" y="0.25" width="15.5" height="34.759319"></rect>
+                    <g id="编组-29" transform="translate(0.000000, 35.259319)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="路径-12" fill="#F5F3FD" xlink:href="#path-1"></use>
+                        <path d="M15.6546978,-0.89040641 L10.7014607,0.444136141 L6.60136569,8.39479855 L8.63197992,12.1181655 C13.3137918,9.41767443 15.6546978,7.86552638 15.6546978,7.46172139 C15.6546978,7.0579164 16.1133043,4.71872132 17.0305174,0.444136141 L15.6546978,-0.89040641 Z" id="路径-32" fill="#7B9CEF" filter="url(#filter-3)" mask="url(#mask-2)"></path>
+                        <path d="M15.9048765,-0.145852317 L15.4228898,0.321015075 L7.78272287,9.33513358 L8.8821586,12.8627196 C13.5639705,10.1622285 15.9048765,8.61008048 15.9048765,8.20627549 C15.9048765,7.80247049 16.363483,5.46327541 17.2806961,1.18869023 L15.9048765,-0.145852317 Z" id="路径-32" fill="#F1F4FD" filter="url(#filter-4)" mask="url(#mask-2)"></path>
+                    </g>
+                    <!-- <rect id="矩形" fill="#455AAA" x="6.98438292" y="44.137601" width="2.74981858" height="5.862399"></rect> -->
+                </g>
+                <text id="SL" font-family="SourceHanSansCN-Regular, Source Han Sans CN" font-size="8" font-weight="normal" fill="#F5F3FD">
+                    <!-- <tspan x="3.444" y="19.2025611">SL</tspan> -->
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
