@@ -1,0 +1,107 @@
+.main-pipe {
+    fill: none;
+    stroke: #DCE8FE;
+    stroke-width: 7;
+}
+
+.main-pipeflow {
+    stroke: red;
+    filter: url(#pipeShadow);
+    fill: none;
+    stroke-width: 5;
+    stroke-dasharray: 55 5;
+    animation: flowLine 4s linear infinite;
+}
+.pipe {
+    fill: none;
+    stroke: #DCE8FE;
+    stroke-width: 4;
+}
+
+.pipeflow {
+    stroke: red;
+    filter: url(#pipeShadow);
+    fill: none;
+    stroke-width: 2.5;
+    stroke-dasharray: 55 5;
+    animation: flowLine 4s linear infinite;
+    animation-delay: 0.95s;
+}
+
+.blue-pipeflow {
+    stroke: #4693db;
+    filter: url(#pipeShadow);
+    fill: none;
+    stroke-width: 2.5;
+    stroke-dasharray: 55 5;
+    animation: flowLine 4s linear infinite;
+    animation-delay: 0.95s;
+}
+
+.green-pipeflow {
+    stroke: #00B050;
+    filter: url(#pipeShadow);
+    fill: none;
+    stroke-width: 2.5;
+    stroke-dasharray: 55 5;
+    animation: flowLine 4s linear infinite;
+    animation-delay: 0.95s;
+}
+
+.yellow-pipeflow {
+    stroke: #FFC000;
+    filter: url(#pipeShadow);
+    fill: none;
+    stroke-width: 2.5;
+    stroke-dasharray: 55 5;
+    animation: flowLine 4s linear infinite;
+    animation-delay: 0.95s;
+}
+
+.device-pipeflow {
+    stroke: #FFF;
+    filter: url(#pipeShadow);
+    fill: none;
+    stroke-width: 5;
+    stroke-dasharray: 55 5;
+    animation: flowLine 4s linear infinite;
+    animation-delay: 0.95s;
+}
+/* 水位容器样式 */
+.water-container {
+    position: absolute; /* 使用绝对定位 */
+    width: 98px; /* 大矩形宽度 */
+    height: 143px; /* 大矩形高度 */
+    border: 1px solid #000; /* 边框，可选 */
+    overflow: hidden; /* 防止水位超出容器 */
+    display: inline-block; /* 使多个容器横向排列 */
+    margin: 10px; /* 容器之间的间距 */
+}
+.water-level {
+    position: absolute;
+    bottom: 0; /* 从底部开始填充 */
+    width: 100%;
+    background-color: rgb(11, 101, 167); /* 水的颜色 */
+    transition: height 0.5s ease; /* 平滑过渡 */
+}
+/* 小矩形样式 */
+.small-water-container {
+    position: absolute; /* 使用绝对定位 */
+    width: 73px; /* 小矩形宽度 */
+    height: 35px; /* 小矩形高度 */
+}
+
+.mid-water-container{
+    position: absolute; /* 使用绝对定位 */
+    width: 93px; 
+    height: 85px; 
+}
+@keyframes flowLine {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -60;
+    }
+}

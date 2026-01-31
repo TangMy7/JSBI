@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    background: #083355;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .header{
+    display: flex;
+    align-items: center;
+    background: #083355;
+    flex: 0;
+    flex-direction: row;
+    padding: 10px 20px;
+}
+
+.box .header .title{
+    background: #083355;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #66c7e3;
+}
+
+.box .header .title p{
+    margin: auto;
+    font-size: x-large;
+}
+.box .header .system-status {
+    margin-left: 400px;
+    padding: 10px 20px;
+    color: green;
+    font-size: 16px;
+    font-size: 20px;
+}
+.box .header .current-time {
+    margin-left: auto;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    font-size: 20px;
+}
+.box .header .menu{
+    display: flex;
+    background: #083355;
+    margin-left: 20px;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.box .header .menu .menu-item {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #0b4b6b;
+    color: #66c7e3;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box .header .menu .menu-item:hover {
+    background-color: #0a3e5a;
+}
+
+.box .main{
+    display: flex;
+    flex: 8;
+}
+
+.box .main .svg-pad{
+    background-color: #083355;
+    flex: 8;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .main .container{
+    background:#083355;
+    flex: 1;
+    flex-direction: column;
+}
+
+.box .main .container h1{
+    color: #007bff; /* 标题颜色 */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.box .main .container label {
+    color: #007bff; /* 标签颜色 */
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+.box .main .container #result {
+    color: #000000;
+    width: 350px;
+    height: 1000px; /* 设置显示区域的高度 */
+    overflow: auto; /* 启用滚动条 */
+    white-space: pre-wrap; /* 保持换行格式 */
+    font-family: monospace; /* 使用等宽字体 */
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+}
+/* 表单元素样式 */
+.box .main .container label, input, button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.box .footer{
+    display: flex;
+    flex: 1;
+}
+
+
+/* svg */
+.pipeflow {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-dasharray: 10;
+    animation: flowLine 2s linear infinite;
+ }
+ .mainpipeflow {
+    fill: none;
+    stroke: blue;
+    stroke-width: 5;
+    stroke-dasharray: 10;
+    animation: flowLine 2s linear infinite;
+ }
+
+ @keyframes flowLine {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -60;
+    }
+}

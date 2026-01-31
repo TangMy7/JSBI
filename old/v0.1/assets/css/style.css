@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    /*background: #083355;*/
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.png'); /* 确保路径正确 */
+    background-size: cover; /* 使背景图片覆盖整个页面 */
+    background-position: center; /* 背景图片居中 */
+}
+
+.box .header{
+    display: flex;
+    align-items: center;
+    /*background: #083355;*/
+    background: rgba(255,255,255,0);
+    flex: 0;
+    flex-direction: row;
+    padding: 10px 20px;
+}
+
+.box .header .title{
+    /*background: #083355;*/
+    background: rgba(255,255,255,0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #66c7e3;
+}
+
+.box .header .title p{
+    margin: auto;
+    font-size: x-large;
+}
+.box .header .system-status {
+    margin-left: 400px;
+    padding: 10px 20px;
+    color: green;
+    font-size: 20px;
+}
+.box .header .current-time {
+    margin-left: auto;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+}
+.box .header .menu{
+    display: flex;
+    /*background: #083355;*/
+    background: rgba(255,255,255,0);
+    margin-left: 20px;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.box .header .menu .menu-item {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #0b4b6b;
+    color: #66c7e3;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box .header .menu .menu-item:hover {
+    background-color: #0a3e5a;
+}
+
+.box .main{
+    display: flex;
+    flex: 8;
+}
+.box .main .svg-pad{
+    /*background-color: #083355;*/
+    /*background-image: url('../images/background.png'); !* 替换为你的背景图片路径 *!*/
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 使背景图片居中显示 */
+    flex: 8;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .main .container{
+    background:#083355;
+    flex: 1;
+    flex-direction: column;
+}
+
+.box .main .container h1{
+    color: #007bff; /* 标题颜色 */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.box .main .container label {
+    color: #007bff; /* 标签颜色 */
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+/* svg */
+.box .main .svg-pad polyline{
+   /* stroke-width: 3px; */
+   fill: none;
+   filter: url(#pipeshadow);
+}

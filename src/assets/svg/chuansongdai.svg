@@ -1,0 +1,45 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 皮带主体（倾斜） -->
+  <polygon points="120,140 620,140 580,180 80,180" fill="#555" />
+
+  <!-- 模拟皮带的斜向条纹（工业皮带） -->
+  <defs>
+    <pattern id="diagonalLines" patternUnits="userSpaceOnUse" width="20" height="20" patternTransform="rotate(45)">
+      <rect x="0" y="0" width="10" height="20" fill="#444" />
+      <!-- 动画：使纹理向右平移，模拟皮带滚动 -->
+      <animateTransform attributeName="patternTransform"
+                        type="translate"
+                        from="0,0" to="20,0"
+                        dur="0.5s" repeatCount="indefinite" />
+    </pattern>
+  </defs>
+  <polygon points="120,140 620,140 580,180 80,180" fill="url(#diagonalLines)" opacity="0.3" />
+
+  <!-- 左右皮带边缘 -->
+  <polygon points="120,140 125,135 625,135 620,140" fill="#333" />
+  <polygon points="80,180 85,175 585,175 580,180" fill="#222" />
+
+  <!-- 传送带底部侧面 -->
+  <polygon points="620,140 620,150 580,190 580,180" fill="#444" />
+  <polygon points="80,180 580,180 580,190 80,190" fill="#333" />
+
+  <!-- 滚轮模拟 -->
+  <circle cx="120" cy="185" r="5" fill="#999" />
+  <circle cx="580" cy="185" r="5" fill="#999" />
+
+  <!-- 支撑立柱 -->
+  <rect x="130" y="190" width="10" height="80" fill="#444" />
+  <rect x="180" y="190" width="10" height="80" fill="#444" />
+  <rect x="560" y="190" width="10" height="80" fill="#444" />
+
+  <!-- 减速电机本体 -->
+  <rect x="600" y="210" width="60" height="40" fill="#333" stroke="#111" />
+  <rect x="600" y="250" width="60" height="10" fill="#222" />
+  <circle cx="620" cy="230" r="8" fill="#ccc" stroke="#999" />
+  <rect x="600" y="200" width="60" height="10" fill="#777" />
+
+  <!-- 电缆线 -->
+  <path d="M 140 180 C 120 220, 110 240, 130 270" stroke="#000" stroke-width="2" fill="none" />
+  <path d="M 160 180 C 140 220, 130 240, 150 270" stroke="#000" stroke-width="2" fill="none" />
+  <path d="M 180 180 C 160 220, 150 240, 170 270" stroke="#000" stroke-width="2" fill="none" />
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="63px" viewBox="0 0 69 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>yjt</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-SE" transform="translate(-838.000000, -261.000000)">
+            <g id="yjt" transform="translate(839.190706, 261.836057)">
+                <g id="编组-16">
+                    <rect id="矩形" stroke="#CDDBF6" stroke-width="0.585365854" fill="#0F2D67" x="1.7474875" y="3.88866606" width="62.7673821" height="57.418651"></rect>
+                    <path d="M0,2.20836041 C-1.49363285e-16,0.988716635 0.988716635,2.24044927e-16 2.20836041,0 L64.5471745,0 C65.7668183,2.88457954e-15 66.7555349,0.988716635 66.7555349,2.20836041 C66.7555349,3.42800419 65.7668183,4.41672083 64.5471745,4.41672083 L2.20836041,4.41672083 C0.988716635,4.41672083 1.49363285e-16,3.42800419 0,2.20836041 Z" id="路径-19" stroke="#0F2D67" stroke-width="0.5" fill="#F5F3FD"></path>
+                    <line x1="10.9339728" y1="0" x2="10.9339728" y2="4.41672083" id="路径-20" stroke="#0F2D67" stroke-width="0.8"></line>
+                    <line x1="19.7357146" y1="0" x2="19.7357146" y2="4.41672083" id="路径-20备份" stroke="#0F2D67" stroke-width="0.8"></line>
+                    <line x1="28.5374564" y1="0" x2="28.5374564" y2="4.41672083" id="路径-20备份-2" stroke="#0F2D67" stroke-width="0.8"></line>
+                    <line x1="37.3391982" y1="0" x2="37.3391982" y2="4.41672083" id="路径-20备份-3" stroke="#0F2D67" stroke-width="0.8"></line>
+                    <line x1="46.14094" y1="0" x2="46.14094" y2="4.41672083" id="路径-20备份-4" stroke="#0F2D67" stroke-width="0.8"></line>
+                    <line x1="54.9426818" y1="0" x2="54.9426818" y2="4.41672083" id="路径-20备份-5" stroke="#0F2D67" stroke-width="0.8"></line>
+                </g>
+                <text id="盐浆桶" font-family="SourceHanSansCN-Regular, Source Han Sans CN" font-size="13.2879046" font-weight="normal" fill="#F5F3FD">
+                    <!-- <tspan x="16.4459106" y="34.6">T200</tspan> -->
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

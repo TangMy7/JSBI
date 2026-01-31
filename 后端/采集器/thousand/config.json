@@ -1,0 +1,36 @@
+{
+  "mysql": {
+    "host": "127.0.0.1",
+    "user": "root",
+    "password": "123456",
+    "database": "js"
+  },
+  "tasks": [
+    {
+      "table": "nowaterc",
+      "source_field": "BpressureA",
+      "target_field": "BpressureA1"
+    },
+    {
+      "table": "nowaterc",
+      "source_field": "BpressureB",
+      "target_field": "BpressureB1"
+    },
+   {
+      "table": "nowaterc",
+      "source_field": "BpressureC",
+      "target_field": "BpressureC1"
+    },
+   {
+      "table": "nowaterc",
+      "source_field": "DpressureB",
+      "target_field": "DpressureB1"
+    },
+    {
+      "table": "nowaterc",
+      "source_field": "DpressureA",
+      "target_field": "DpressureA1"
+    }
+  ],
+  "interval": 30
+}

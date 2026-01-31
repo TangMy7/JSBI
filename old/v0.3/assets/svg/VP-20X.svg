@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="61px" viewBox="0 0 94 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>vp_201</title>
+    <defs>
+        <linearGradient x1="48.5102571%" y1="11.2537438%" x2="51.1786223%" y2="81.7593602%" id="linearGradient-1">
+            <stop stop-color="#FBFAFF" offset="0%"></stop>
+            <stop stop-color="#8CA8F4" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="7.40400681 12.1176628 0 0 0 37.0017036 7.40400681 21.945581"></polygon>
+        <polygon id="path-4" points="7.40400681 12.1176628 0 0 0 37.0017036 7.40400681 21.945581"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-SE" transform="translate(-628.000000, -263.000000)">
+            <g id="vp_201" transform="translate(628.776662, 263.436057)">
+                <rect id="矩形" fill="#515F95" x="91.1281977" y="20.6840308" width="1.75020639" height="10.2680018" rx="0.875103196"></rect>
+                <rect id="矩形备份-10" fill="#515F95" x="5.68434189e-14" y="20.6840308" width="1.75020639" height="10.2680018" rx="0.875103196"></rect>
+                <g id="编组-12" transform="translate(1.752540, 0.000000)">
+                    <!-- <rect id="矩形" stroke="#031D4F" stroke-width="0.5" fill="#DCE8FE" x="24.1672095" y="0" width="4" height="16.2521295"></rect> -->
+                    <!-- <rect id="矩形备份-6" stroke="#031D4F" stroke-width="0.5" fill="#DCE8FE" x="57.693615" y="0" width="4" height="16.2521295"></rect> -->
+                    <!-- <rect id="矩形备份-7" stroke="#031D4F" stroke-width="0.5" fill="#DCE8FE" x="34.8997479" y="43.7478705" width="4" height="16.2521295"></rect> -->
+                    <!-- <rect id="矩形备份-8" stroke="#031D4F" stroke-width="0.5" fill="#DCE8FE" x="27.0292198" y="43.7478705" width="4" height="16.2521295"></rect> -->
+                    <g id="编组-35" transform="translate(81.969317, 9.301533)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="路径-17" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="编组-34" transform="translate(0.000000, 9.301533)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use id="路径-17备份" fill="url(#linearGradient-1)" transform="translate(3.702003, 18.500852) scale(-1, 1) translate(-3.702003, -18.500852) " xlink:href="#path-4"></use>
+                    </g>
+                    <rect id="矩形" stroke="#CDDBF6" stroke-width="0.5" fill="#0F2D67" x="7.65400681" y="9.55153322" width="74.0653103" height="36.5017036"></rect>
+                    <text id="VP-201" font-family="SourceHanSansCN-Regular, Source Han Sans CN" font-size="12" font-weight="normal" fill="#F5F3FD">
+                        <!-- <tspan x="21.7521042" y="33.1584327">VP-201</tspan> -->
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
