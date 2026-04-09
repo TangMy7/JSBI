@@ -229,7 +229,7 @@ export default {
     },
     async openCalibrationDialog() {
       try {
-        const response = await axios.get('http://172.32.12.100:9072/api/ratio/preview');
+        const response = await axios.get('http://127.0.0.1:9072/api/ratio/preview');
         console.log('校准接口返回', response);
         const data = response && response.data ? response.data : null;
         if (data && data.success) {
@@ -246,7 +246,7 @@ export default {
     },
     async confirmCalibration() {
       try {
-        const response = await axios.post('http://172.32.12.100:9072/api/ratio', { ratio: this.adjustedRatio });
+        const response = await axios.post('http://127.0.0.1:9072/api/ratio', { ratio: this.adjustedRatio });
         console.log('校准确认接口返回', response);
         const data = response && response.data ? response.data : null;
         if (data && data.success) {

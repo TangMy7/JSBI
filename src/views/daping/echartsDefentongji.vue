@@ -115,7 +115,7 @@ export default {
     async fetchData() {
       try {
         // 获取API历史数据
-        const response = await axios.get('http://172.32.12.100:9072/api/data5/');
+        const response = await axios.get('http://127.0.0.1:9072/api/data5/');
         const data = response.data?.defen;
         if (data) {
           this.scores.aban = data.aban;
@@ -125,7 +125,7 @@ export default {
         }
 
         // 获取实时班次数据
-        const realtime = await axios.get('http://172.32.12.100:9072/api/data9/');
+        const realtime = await axios.get('http://127.0.0.1:9072/api/data9/');
         const rdata = realtime.data;
         if (rdata) {
           this.realtimeData = {

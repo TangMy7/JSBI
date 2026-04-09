@@ -118,7 +118,7 @@ export default {
       
       // 更新后端通知状态
       try {
-        await fetch('http://172.32.12.100:9072/mark_notification_notified', {
+        await fetch('http://127.0.0.1:9072/mark_notification_notified', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ point_id: point.PointId })
@@ -144,7 +144,7 @@ export default {
       
       try {
         // 发送处理状态到后端
-        const response = await fetch('http://172.32.12.100:9072/update_alarm_handling', {
+        const response = await fetch('http://127.0.0.1:9072/update_alarm_handling', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -163,7 +163,7 @@ export default {
         // 确保后续的代码不会将这个点位重新设为报警状态
         state.alarmPoint.handling = 'resolved';
         
-        const stopResponse = await fetch(`http://172.32.12.100:9072/stop_alarm_count/${encodeURIComponent(state.alarmPoint.PointId)}`, {
+        const stopResponse = await fetch(`http://127.0.0.1:9072/stop_alarm_count/${encodeURIComponent(state.alarmPoint.PointId)}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -192,7 +192,7 @@ export default {
       
       try {
         // 发送检修状态到后端
-        const response = await fetch('http://172.32.12.100:9072/update_alarm_handling', {
+        const response = await fetch('http://127.0.0.1:9072/update_alarm_handling', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -207,7 +207,7 @@ export default {
           return;
         }
         
-        const stopResponse = await fetch(`http://172.32.12.100:9072/stop_alarm_count/${encodeURIComponent(state.alarmPoint.PointId)}`, {
+        const stopResponse = await fetch(`http://127.0.0.1:9072/stop_alarm_count/${encodeURIComponent(state.alarmPoint.PointId)}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -276,7 +276,7 @@ export default {
       setTimeout(async () => {
         try {
           // 5秒后重新检查点位状态
-          const response = await fetch('http://172.32.12.100:9072/get_monitoring_points');
+          const response = await fetch('http://127.0.0.1:9072/get_monitoring_points');
           const result = await response.json();
           
           if (result.success) {

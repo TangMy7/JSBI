@@ -150,7 +150,7 @@ export default {
   methods: {
     async fetchData() {
       try {
-        const response = await axios.get('http://172.32.12.100:9072/api/data6/', { timeout: 5000 });
+        const response = await axios.get('http://127.0.0.1:9072/api/data6/', { timeout: 5000 });
         const data = response.data;
         if (data) {
           const summary = data.summary;

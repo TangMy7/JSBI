@@ -37,7 +37,7 @@ export default {
     ...mapActions('Alarm', ['setMaintenanceMode']),
     async toggleMaintenanceMode(enabled) {
       try {
-        const response = await fetch('http://172.32.12.100:9072/toggle_maintenance_mode', {
+        const response = await fetch('http://127.0.0.1:9072/toggle_maintenance_mode', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

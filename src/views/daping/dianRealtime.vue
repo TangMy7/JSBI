@@ -120,7 +120,7 @@ export default {
   methods: {
     async confirmCalibration() {
       try {
-        const response = await axios.post('http://172.32.12.100:9072/api/ratio', {
+        const response = await axios.post('http://127.0.0.1:9072/api/ratio', {
           ratio: this.adjustedRatio
         });
         if (response.data.success) {
@@ -137,10 +137,10 @@ export default {
     },
     async fetchBeltScaleFlow() {
       try {
-        const res005 = await axios.get('http://172.32.12.100:9072/get_value/CY_PLC3_005');
+        const res005 = await axios.get('http://127.0.0.1:9072/get_value/CY_PLC3_005');
         const flow005 = Number(res005.data && res005.data.value ? res005.data.value : 0);
 
-        const res012 = await axios.get('http://172.32.12.100:9072/get_value/CY_PLC3_012');
+        const res012 = await axios.get('http://127.0.0.1:9072/get_value/CY_PLC3_012');
         const iodineValue = Number(res012.data && res012.data.value ? res012.data.value : 0);
 
         const currentCalculatedIodineValue = iodineValue * this.ratio;
@@ -190,7 +190,7 @@ export default {
 
     async fetchRatio() {
       try {
-        const response = await axios.get('http://172.32.12.100:9072/api/ratio/latest');
+        const response = await axios.get('http://127.0.0.1:9072/api/ratio/latest');
         if (response.data && response.data.success && typeof response.data.ratio === 'number') {
           this.ratio = Number(response.data.ratio);
         } else {

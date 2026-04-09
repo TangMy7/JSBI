@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     async initChart() {
-      const defen = await axios.get('http://172.32.12.100:9072/api/data5/');
+      const defen = await axios.get('http://127.0.0.1:9072/api/data5/');
       console.log(defen);
       const chart = echarts.init(this.$refs.chart);
       const option = {

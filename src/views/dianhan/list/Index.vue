@@ -311,7 +311,7 @@
     // 新增校正按钮方法
     async handleRadio() {
     try {
-        const res = await axios.post('http://172.32.12.100:9072/api/ratio');
+        const res = await axios.post('http://127.0.0.1:9072/api/ratio');
         if (res.data && res.data.success) {
           this.$message ? this.$message.success('校正成功，已写入数据库') : alert('校正成功，已写入数据库');
           // 重新拉取ratio

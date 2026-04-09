@@ -40,11 +40,11 @@ export default {
     async fetchData() {
       try {
         // 获取能耗数据
-        const energyResponse = await axios.get('http://172.32.12.100:9072/api/data4/', {
+        const energyResponse = await axios.get('http://127.0.0.1:9072/api/data4/', {
           timeout: 5000
         });
         // 获取产量数据（包含aban1和bban1）
-        const outputResponse = await axios.get('http://172.32.12.100:9072/api/data3/', {
+        const outputResponse = await axios.get('http://127.0.0.1:9072/api/data3/', {
           timeout: 5000
         });
         

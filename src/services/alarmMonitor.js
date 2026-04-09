@@ -50,7 +50,7 @@ class AlarmMonitor {
   
   async fetchMonitoringData() {
     try {
-      const response = await fetch('http://172.32.12.100:9072/get_monitoring_points', {
+      const response = await fetch('http://127.0.0.1:9072/get_monitoring_points', {
         method: 'GET',
         headers: {
           'Accept': 'application/json'
@@ -137,7 +137,7 @@ class AlarmMonitor {
   
   async checkAlarmNotifications() {
     try {
-      const response = await fetch('http://172.32.12.100:9072/get_alarm_notifications', {
+      const response = await fetch('http://127.0.0.1:9072/get_alarm_notifications', {
         method: 'GET',
         headers: {
           'Accept': 'application/json'
@@ -166,7 +166,7 @@ class AlarmMonitor {
   
   async markNotificationAsNotified(pointId) {
     try {
-      await fetch('http://172.32.12.100:9072/mark_notification_notified', {
+      await fetch('http://127.0.0.1:9072/mark_notification_notified', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -182,7 +182,7 @@ class AlarmMonitor {
   
   async checkMaintenanceStatus() {
     try {
-      const response = await fetch('http://172.32.12.100:9072/check_maintenance_status', {
+      const response = await fetch('http://127.0.0.1:9072/check_maintenance_status', {
         method: 'GET',
         headers: {
           'Accept': 'application/json'

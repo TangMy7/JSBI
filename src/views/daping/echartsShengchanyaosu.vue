@@ -83,7 +83,7 @@ export default {
 
     // 添加数据获取方法
     fetchData() {
-      axios.get('http://172.32.12.100:9072/api/data7/')
+      axios.get('http://127.0.0.1:9072/api/data7/')
         .then(response => {
           const data = response.data;
           // 添加数据有效性检查
@@ -209,7 +209,7 @@ export default {
       this.error = null;
       
       try {
-        const response = await axios.get('http://172.32.12.100:9072/api/data7/', {
+        const response = await axios.get('http://127.0.0.1:9072/api/data7/', {
           timeout: 2000 // 5秒超时
         });
         

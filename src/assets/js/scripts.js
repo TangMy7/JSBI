@@ -80,8 +80,8 @@ document.head.appendChild(style);
 
 // 根据当前页面 URL 确定使用哪个基础 URL
 const baseUrl = window.location.hostname.startsWith('10.') 
-    ? 'http://172.32.12.100:9072'
-    : 'http://172.32.12.100:9072';  // 替换为你的映射 IP
+    ? 'http://127.0.0.1:9072'
+    : 'http://127.0.0.1:9072';  // 替换为你的映射 IP
 
 // 从数据库获取阈值数据，更新elementIds对象
 async function fetchThresholds() {

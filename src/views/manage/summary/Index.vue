@@ -30,7 +30,7 @@
       },
       data() {
           return {
-              baseUrl: 'http://172.32.12.100:9070/runqian5/reportJsp/showReport.jsp?rpx=/111/test3.rpx&',
+              baseUrl: 'http://127.0.0.1:9070/runqian5/reportJsp/showReport.jsp?rpx=/111/test3.rpx&',
               iframeUrl: "",
               start: "",
               end: "",

@@ -67,8 +67,8 @@ export default {
     async fetchValues() {
       try {
         const [saltRes, iodineRes] = await Promise.all([
-          axios.get('http://172.32.12.100:9072/get_value/CY_PLC3_002'),
-          axios.get('http://172.32.12.100:9072/get_value/CY_PLC3_012'),
+          axios.get('http://127.0.0.1:9072/get_value/CY_PLC3_002'),
+          axios.get('http://127.0.0.1:9072/get_value/CY_PLC3_012'),
         ]);
         this.saltValue = Number(saltRes.data.value) || 0;
         this.iodineValue = Number(iodineRes.data.value) || 0;

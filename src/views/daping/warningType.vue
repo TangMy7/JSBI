@@ -51,7 +51,7 @@ export default {
   methods: {
     async fetchAlarmStats() {
       try {
-        const response = await axios.get('http://172.32.12.100:9072/get_monitoring_points')
+        const response = await axios.get('http://127.0.0.1:9072/get_monitoring_points')
         if (response.data.success) {
           const { type_stats, status_stats } = response.data
 
@@ -81,7 +81,7 @@ export default {
     },
     // 获取月度报警统计数据
     fetchMonthlyAlarms() {
-      fetch('http://172.32.12.100:9072/get_monthly_alarms')
+      fetch('http://127.0.0.1:9072/get_monthly_alarms')
         .then(response => response.json())
         .then(data => {
           // 反转数据顺序，使最早的月份在前

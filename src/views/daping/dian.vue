@@ -3,7 +3,7 @@
     <div class="trapezoid-title-bar">
       食盐生产碘含量智能检测管控系统
       <div class="trapezoid-title-sub">
-        设计：张红光劳模创新工作室  实施：淮工计算机学院
+        设计：XXX工作室  实施：XXX学院
       </div>
     </div>
     <div class="main-row">

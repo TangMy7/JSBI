@@ -813,7 +813,7 @@ export default {
     // 添加计时器相关的方法
     async updateStartDate() {
       try {
-        const response = await fetch('http://172.32.12.100:9072/api/start_date');
+        const response = await fetch('http://127.0.0.1:9072/api/start_date');
         const data = await response.json();
         if (data.success) {
           this.startDate = data.start_date;
@@ -833,7 +833,7 @@ export default {
     
     async updateRuntime() {
       try {
-        const response = await fetch('http://172.32.12.100:9072/api/runtime_info');
+        const response = await fetch('http://127.0.0.1:9072/api/runtime_info');
         const data = await response.json();
         this.totalRunTime = this.formatTime(data.total_seconds);
         this.currentRunTime = this.formatTime(data.current_seconds);
@@ -844,7 +844,7 @@ export default {
     
     async checkMaintenanceStatus() {
       try {
-        const response = await fetch('http://172.32.12.100:9072/check_maintenance_status');
+        const response = await fetch('http://127.0.0.1:9072/check_maintenance_status');
         const data = await response.json();
         this.isMaintenance = data.is_maintenance;
       } catch (error) {
@@ -989,7 +989,7 @@ export default {
         const day = String(date.getDate()).padStart(2, '0');
         const formattedDate = `${year}-${month}-${day}`;
 
-        const response = await fetch('http://172.32.12.100:9072/api/update_start_date', {
+        const response = await fetch('http://127.0.0.1:9072/api/update_start_date', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -1046,7 +1046,7 @@ export default {
                            (this.newCurrentRunTime.hours * 3600) + 
                            (this.newCurrentRunTime.minutes * 60);
         
-        const response = await fetch('http://172.32.12.100:9072/api/update_current_runtime', {
+        const response = await fetch('http://127.0.0.1:9072/api/update_current_runtime', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -1101,7 +1101,7 @@ export default {
                            (this.newTotalRunTime.hours * 3600) + 
                            (this.newTotalRunTime.minutes * 60);
         
-        const response = await fetch('http://172.32.12.100:9072/api/update_total_runtime', {
+        const response = await fetch('http://127.0.0.1:9072/api/update_total_runtime', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -1153,7 +1153,7 @@ export default {
       }
       
       try {
-        const response = await fetch('http://172.32.12.100:9072/api/history_data', {
+        const response = await fetch('http://127.0.0.1:9072/api/history_data', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

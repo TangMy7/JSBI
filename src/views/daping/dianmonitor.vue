@@ -98,7 +98,7 @@ export default {
     async fetchPointData(pointId, key) {
       if (!this.isActive) return;
       try {
-        const response = await axios.get(`http://172.32.12.100:9072/get_value/${pointId}`);
+        const response = await axios.get(`http://127.0.0.1:9072/get_value/${pointId}`);
         if (response.data && response.data.value !== undefined) {
           this[key] = Number(response.data.value);
         }
@@ -109,7 +109,7 @@ export default {
     // 新增方法：获取碘液浓度
     async fetchIodineConcentration() {
       try {
-        const response = await axios.get('http://172.32.12.100:9072/api/dianye/latest');
+        const response = await axios.get('http://127.0.0.1:9072/api/dianye/latest');
         if (response.data && response.data.success) {
           this.manualIodineConcentration = response.data.dianye;
         }

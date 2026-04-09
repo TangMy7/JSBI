@@ -51,7 +51,7 @@ export default {
     },
     async fetchData() {
       try {
-        const response = await axios.get('http://172.32.12.100:9072/api/data6/', { timeout: 5000 })
+        const response = await axios.get('http://127.0.0.1:9072/api/data6/', { timeout: 5000 })
         const { summary, all_month_data } = response.data
 
         const now = new Date()
@@ -299,7 +299,7 @@ export default {
     },
     async fetchData() {
       try {
-        const response = await axios.get('http://172.32.12.100:9072/api/data6/', { timeout: 5000 })
+        const response = await axios.get('http://127.0.0.1:9072/api/data6/', { timeout: 5000 })
         const { summary, all_month_data } = response.data
 
         const now = new Date()

@@ -52,7 +52,7 @@ export default {
     },
     async fetchEnergyData() {
       try {
-        const response = await axios.get('http://172.32.12.100:9072/api/data/');
+        const response = await axios.get('http://127.0.0.1:9072/api/data/');
         const data = response.data.records;
         // console.log('原始数据:', data);
 

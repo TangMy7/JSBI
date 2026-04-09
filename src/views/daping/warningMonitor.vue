@@ -138,7 +138,7 @@ export default {
     
     async fetchMonitoringData() {
       try {
-        const response = await fetch('http://172.32.12.100:9072/get_monitoring_points', {
+        const response = await fetch('http://127.0.0.1:9072/get_monitoring_points', {
           method: 'GET',
           headers: {
             'Accept': 'application/json'
@@ -211,7 +211,7 @@ export default {
         this.dialogVisible = false;
         
         // 发送处理状态到后端，使用PointId而不是id
-        const response = await fetch('http://172.32.12.100:9072/update_alarm_handling', {
+        const response = await fetch('http://127.0.0.1:9072/update_alarm_handling', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -238,7 +238,7 @@ export default {
           targetPoint.status = 'repair';
         }
         
-        const stopResponse = await fetch(`http://172.32.12.100:9072/stop_alarm_count/${encodeURIComponent(targetPoint.PointId)}`, {
+        const stopResponse = await fetch(`http://127.0.0.1:9072/stop_alarm_count/${encodeURIComponent(targetPoint.PointId)}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -298,7 +298,7 @@ export default {
     // 切换检修模式
     async toggleMaintenanceMode(enabled) {
       try {
-        const response = await fetch('http://172.32.12.100:9072/toggle_maintenance_mode', {
+        const response = await fetch('http://127.0.0.1:9072/toggle_maintenance_mode', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

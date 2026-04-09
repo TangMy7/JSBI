@@ -11,7 +11,7 @@ export default {
   },
   data(){
     return{
-      baseUrl:'http://172.32.12.100:9070/runqian5/reportJsp/showReport.jsp?rpx=/111/test1.rpx&start=2024-04-05&end=2024-04-06'
+      baseUrl:'http://127.0.0.1:9070/runqian5/reportJsp/showReport.jsp?rpx=/111/test1.rpx&start=2024-04-05&end=2024-04-06'
     }
   },
   methods:{

@@ -77,7 +77,7 @@ export default {
     },
     async fetchData() {
       try {
-        const response = await axios.get('http://172.32.12.100:9072/api/data/');
+        const response = await axios.get('http://127.0.0.1:9072/api/data/');
         this.processChartData(response.data.records);
         // 存储班次均值数据
         this.avgData = response.data.class_stats;

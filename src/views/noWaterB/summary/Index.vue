@@ -47,7 +47,7 @@ export default {
     },
     data() {
         return {
-            baseUrl: 'http://172.32.12.100:9070/runqian5/reportJsp/showReport.jsp?rpx=/111/noWaterB.rpx&',
+            baseUrl: 'http://127.0.0.1:9070/runqian5/reportJsp/showReport.jsp?rpx=/111/noWaterB.rpx&',
             iframeUrl: "",
             start: "",
             end: "",

@@ -1,2 +1,54 @@
+.DS_Store
 node_modules
-dist
+/dist
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+node_modules
+
+# ---- sensitive / local-only directories ----
+# Local scripts & experiments (contain credentials)
+/js_demo/
+
+# Backend snippets mistakenly placed in frontend assets
+/src/assets/api/
+
+# Runtime/local state files
+/maintenance_status.json
+
+# ---- build artifacts (any nested project) ----
+**/dist/
+**/build/
+**/.cache/
+
+# Python build/cache
+**/__pycache__/
+**/*.py[cod]
+**/*.pyd
+**/*.pyo
+**/*.spec
+
+# PyInstaller outputs
+**/*.toc
+**/*.pyz
+**/*.pkg
+**/xref-*.html
+**/warn-*.txt
+**/base_library.zip

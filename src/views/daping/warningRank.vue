@@ -76,7 +76,7 @@ export default {
   methods: {
     async fetchAlarms() {
       try {
-        const response = await fetch('http://172.32.12.100:9072/get_monitoring_points')
+        const response = await fetch('http://127.0.0.1:9072/get_monitoring_points')
         const data = await response.json()
         if (data.success) {
           // 只保留报警状态且未处理的点位

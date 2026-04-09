@@ -517,7 +517,7 @@ export default {
       
       try {
         // 直接调用API获取数据
-        const response = await axios.get(`http://172.32.12.100:9072/get_manual_iodine`);
+        const response = await axios.get(`http://127.0.0.1:9072/get_manual_iodine`);
         
         if (response.data && response.data.success) {
           const data = response.data.data || {};
@@ -570,7 +570,7 @@ export default {
       if (!this.isActive) return;
       
       try {
-        const response = await axios.get(`http://172.32.12.100:9072/get_value/${pointId}`);
+        const response = await axios.get(`http://127.0.0.1:9072/get_value/${pointId}`);
         if (response.data && response.data.value !== undefined) {
           // 如果是碘含量数据，应用校准系数
           if (key === 'iodineContent') {
@@ -1114,7 +1114,7 @@ export default {
       if (!this.isActive) return;
       
       try {
-        const response = await axios.get(`http://172.32.12.100:9072/get_manual_iodine`);
+        const response = await axios.get(`http://127.0.0.1:9072/get_manual_iodine`);
         
         if (response.data && response.data.success) {
           const data = response.data.data || {};
@@ -1176,7 +1176,7 @@ export default {
         const date = this.formatDateForQuery(this.selectedManualTime);
         const time = this.formatTimeForQuery(this.selectedManualTime);
         
-        const response = await axios.get('http://172.32.12.100:9072/get_manual_iodine_by_time', {
+        const response = await axios.get('http://127.0.0.1:9072/get_manual_iodine_by_time', {
           params: {
             time: `${date} ${time}`
           }
@@ -1229,7 +1229,7 @@ export default {
           force_refresh: true
         };
         
-        const response = await axios.post('http://172.32.12.100:9072/update_manual_iodine', updateData);
+        const response = await axios.post('http://127.0.0.1:9072/update_manual_iodine', updateData);
         
         if (response.data && response.data.success) {
           this.$message.success('人工测碘校准成功并已更新数据库');
